@@ -1,6 +1,119 @@
-body{
-    color: white
+@font-face {
+    font-family: 'SST Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Roman'), url('SSTRg.woff') format('woff');
 }
+    
+
+@font-face {
+    font-family: 'SST Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Condensed'), url('SSTRgCn.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Italic'), url('SSTRgIt.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Light'), url('SSTLight.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Light Italic'), url('SSTLightIt.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Medium'), url('SSTMedium.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Condensed Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Condensed Medium'), url('SSTMediumCn.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Medium Italic'), url('SSTMediumIt.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Bold'), url('SSTBold.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Condensed Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Condensed Bold'), url('SSTBoldCn.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Bold Italic'), url('SSTBoldIt.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Heavy'), url('SSTHeavy.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'SST Heavy Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Heavy Italic'), url('SSTHeavyIt.woff') format('woff');
+}
+
+body{
+    color: white;
+     font-family: SST Roman,Arial,sans-serif;
+}
+/* overwrite bootstrap color */
+.btn-danger {
+    color: #fff;
+    background-color: #CD3D0F;
+    border-color: #CD3D0F;
+}
+
+
+
 .dark-logo-section{
     background-color: black;
     position: fixed;
@@ -39,12 +152,10 @@ section.ps5-presentation-section{
     text-align: center;
 }
 h4{
-    color: #006FD1;
     font-size: 14px;
     font-weight: bold;
 }
 h3{
-    color: grey;
     font-size: 16px;
 }
 section.ps5-console-section{
@@ -77,4 +188,22 @@ section.social-media-section{
 }
 footer{
     background-color: #00439C;
+}
+
+
+.cover-active{
+    padding: 2px;
+    border: solid 2px #006FD1
+}
+.image-collage-active{
+    position: relative
+}
+.image-collage-active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 3px;
+    background-color: #006FD1;
 }
