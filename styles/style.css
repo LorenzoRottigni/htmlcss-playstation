@@ -126,6 +126,12 @@ nav.navbar{
     margin-top: 50px;
 
 }
+.navbar-brand{
+    transition: 1s;
+}
+.navbar-brand:hover{
+    transform: scale(140%);
+}
 .left-nav,
 .right-nav{
     height: 60px;
@@ -151,6 +157,21 @@ img{
 section.ps5-presentation-section{
     color: black;
     text-align: center;
+}
+/* TITOLI */
+h2{ 
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2.3rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+h5,
+.small-text,
+footer{
+    font-size: 0.9rem;  
 }
 h4{
     font-size: 14px;
@@ -189,7 +210,45 @@ section.social-media-section{
 footer{
     background-color: #00439C;
 }
-
+nav ul li{
+    position: relative;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+ul.list-hidden{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    border: solid #006FD1;
+    animation: fadeInOpacity 0.5s    linear;
+    color: black;
+}
+ul.list-hidden li{
+    border-bottom: solid 1px #006FD1
+}
+nav ul li i[class="fas fa-chevron-up"]{
+    transition: 0.5s;
+}
+nav ul li:hover ul.list-hidden{
+    display: block !important;
+}
+nav ul li:hover i[class="fas fa-chevron-up"]{
+    transform: rotate(180deg);
+    
+}
+nav ul li:hover{
+    color: #006FD1
+}
 
 .cover-active{
     padding: 2px;
