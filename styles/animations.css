@@ -1,0 +1,129 @@
+/* navbar hover fade in keyframe */
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* navbar display onhover lists */
+
+ul.list-hidden{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px #006FD1;
+    animation: fadeInOpacity 0.5s    linear;
+    color: black;
+}
+
+ul.list-hidden li{
+    border-bottom: solid 1px #006FD1
+}
+
+nav ul li:hover .list-hidden{
+    display: block !important;
+}
+
+/* navbar hover color */
+
+nav ul li:hover{
+    color: #006FD1
+}
+
+/* chevron rotate effect */
+
+nav ul li i[class="fas fa-chevron-down"]{
+    transition: 0.5s;
+}
+
+nav ul li:hover i[class="fas fa-chevron-down"]{
+    transform: rotate(180deg);
+}  
+
+/* ps logo navbar scale effect */
+
+.navbar-brand:hover{
+    transform: scale(140%);
+}
+
+/* nav playstation accordion */
+
+#nav-accordion-button:hover{
+    color: #006FD1;
+    text-decoration: underline;
+}
+
+/* outline hover cover card effect */
+
+.game-cover-card-section img:hover{
+    padding: 2px;
+    border: solid 2px #006FD1
+}
+
+/* selected hover game cover effect */
+
+section.game-cover-card-section img:hover{
+    margin-top: -10px
+}
+
+/* opacity 1 ps5 images hover effect */
+
+section.ps5-images-section img:hover{
+    opacity: 1
+}
+
+/* blue under container ps5 images hover effect */
+
+.cover-active{
+    padding: 2px;
+    border: solid 2px #006FD1
+}
+
+.image-collage-active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 3px;
+    background-color: #006FD1;
+}
+
+/* buttons effects */
+
+.btn{
+    position: relative
+}
+
+.btn-light:hover:after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background-color: transparent;
+    border: solid black;
+    border-radius: 50rem;
+}
+
+.btn-primary:hover:after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    background-color: transparent;
+    border: solid #006FD1;
+    border-radius: 50rem;
+}
+

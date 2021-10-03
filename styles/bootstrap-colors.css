@@ -1,0 +1,14 @@
+/* overwrite bootstrap color */
+.btn-danger {
+    color: #fff;
+    background-color: #CD3D0F;
+    border-color: #CD3D0F;
+}
+.btn-danger:hover {
+    background-color: white;
+    color: #CD3D0F;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: #006FD1;
+}
